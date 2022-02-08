@@ -1,0 +1,69 @@
+@media (max-width: 1000px){
+    main{
+        margin: 0 20px;
+    }
+    body{
+        font-size: 90%;
+    }
+    form{
+        width: 380px;
+    }
+    .instructions{
+        margin-top: 20px;
+        width: 60%;
+    }
+    .instructions > h2:first-child{
+        text-align: center;
+        border-left: none;
+        border-bottom: 2px solid var(--lilas);
+    }
+
+    
+}
+@media (max-width: 670px){
+    .toggle-text{
+        opacity: 1;
+        font-size: 2em;
+        position: relative;
+        top: 5px;
+        padding: 3px 5px;
+        border: none;
+        background-color: var(--branco);
+    }
+    img{
+        height: 230px;
+    }
+    .situacao-imc{
+        font-size: 90%;
+        width: 500px;
+    }
+    .instructions{
+        display: none;
+    }
+}
+@media (max-width: 550px){
+    .situacao-imc{
+        width: 400px;
+        font-size: 80%;
+    }
+    input#btn-fechar{
+        padding: 5px 10px;
+    }
+}
+@media(max-width: 480px){
+    img{
+        height: 200px;
+    }
+    form{
+        width: 300px;
+    }
+    .situacao-imc{
+        width: 300px;
+        font-size: 60%;
+    }
+}
+@media(max-width: 340px){
+    form{
+        width: 250px;
+    }
+}

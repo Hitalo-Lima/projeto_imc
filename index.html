@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/tabela.css">
+    <link rel="stylesheet" href="estilos/responsivo.css">
+    <link rel="shortcut icon" href="imagens/icone-coracao.ico" type="image/x-icon">
+    <title>IMC | Saude e bem-estar</title>
+</head>
+<body>
+    <main id="main-content">
+        <div id="titulo-princip">
+            <h1>Cálculo de IMC</h1>
+            <h2>Saúde e bem-estar</h2>
+            <button class="toggle-text"><i class="fas fa-question-circle"></i></button>
+        </div>
+        <hr>
+
+        <div class="container">
+            <div class="imagens">
+                <img src="imagens/img-homem.png" alt="Silhueta masculina" class="selected" id="img1">
+                <img src="imagens/img-mulher.png" alt="Silhueta feminina" id="img2">
+            </div><!--Imagens-->
+            <div class="form">
+                <form>
+                    <span class="destaque">Gênero</span>
+                    <div class="inputBox">
+                        <select name="genero" id="genero" onchange="destacar()">
+                            <option value="masculino" selected>Masculino</option id='masc'>
+                            <option value="feminino" id="fem">Feminino</option>
+                        </select>
+                    </div>
+
+                    <span class="destaque">Altura</span> <br>
+                    <div class="inputBox">
+                        <input type="text" name="" id="altura" placeholder="Informe sua altura (m)">
+                    </div>
+
+                    <span class="destaque">Peso</span> <br>
+                    <div class="inputBox">
+                        <input type="text" name="" id="peso" placeholder="Informe seu peso (kg)">
+                    </div>
+
+                </form>
+                <input type="submit" value="Calcular" id="btn-calc">
+                <input type="submit" value="Ver tabela" id="tbl-calc" disabled>
+            </div><!--Formulário-->
+            <div class="instructions">
+                    <h2>Entenda um pouco mais</h2><br>
+                <p>O calculo do <abbr title="Índice de massa corporal">IMC</abbr> é feito com base na fórmula:
+                Peso(em kg) dividido pela altura(em metros) ao quadrado, e é realizado para avaliar seu grau de sobrepeso e obesidade.</p> <br>
+                <h2>Resultado: <span id="result"></span></h2>
+
+            </div><!--Instruções-->
+
+        </div><!--Container-->
+        <div class="situacao-imc">
+            <div id="titulo-tabela">
+                <h1>Situação de Obesidade</h1>
+                <h2>Confira a situação na tabela abaixo:</h2>
+            </div>
+            <input type="button" value="x" id="btn-fechar">
+            <div class="container-tabela">
+                <div class="classificacao">
+                    <span class="titulo">Classificação</span>
+                    <span class="situacao magreza">Magreza</span>
+                    <span class="situacao normal">Normal</span>
+                    <span class="situacao sobrepeso">Sobrepeso</span>
+                    <span class="situacao obesidade">Obesidade</span>
+                </div>
+                <div class="imc">
+                    <span class="titulo">IMC</span>
+                    <span class="situacao magreza">Abaixo de <span class="valor_imc1"></span> </span>
+
+                    <span class="situacao normal"><span class="valor_imc2"></span> - <span class="valor_imc3"></span></span>
+
+                    <span class="situacao sobrepeso"><span class="valor_imc4"></span> - <span class="valor_imc5"></span></span>
+
+                    <span class="situacao obesidade">Mais que <span class="valor_imc6"></span></span>
+                </div>
+            </div>
+        </div>
+        </main>
+    </main><!--Principal-->
+    
+    <footer>
+        <p>Projeto feito por <a href="https://github.com/Hitalo-Lima" target="_blank">Hítalo Lima</a></p>
+    </footer><!--Rodapé-->
+    
+    <script src="js/comportamento_genero.js"></script>
+    <script src="js/calculo_imc.js"></script>
+
+    <script src="https://kit.fontawesome.com/d31b81b1c1.js" crossorigin="anonymous"></script>
+</body>
+</html>
