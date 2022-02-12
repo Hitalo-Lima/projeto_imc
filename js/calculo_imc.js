@@ -24,12 +24,11 @@ function mostrarImc(){
         resultado.textContent = '';
     }else{
         resultado.textContent = ''
-        resultado.textContent += calcular()+' kg/m²';
+        resultado.textContent += calcular() + ", "+verifica_genero();
         verificaResult();
     }
 
 }
-
 
 function calcSituacaoAtual(){
 

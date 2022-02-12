@@ -112,6 +112,7 @@ form input, select{
     margin: 10px 0px;
     border: none;
     border-bottom: 1px solid var(--cinza-claro);
+    background-color: white;
     outline: none;
     color: var(--cinza-escuro);
 }

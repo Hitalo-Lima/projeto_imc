@@ -28,6 +28,12 @@
 
 }
 @media (max-width: 630px){
+    #first-hr{
+        display: none;
+    }
+    main #titulo-princip{
+        padding-bottom: 0;
+    }
     .toggle-text{
         opacity: 1;
     }
@@ -38,6 +44,9 @@
         display: block;
         order: -1;
     }
+    img{
+        height: 230px;
+    }
     img#img2{
         right: 60px;
     }
@@ -46,7 +55,9 @@
     }
     .instructions{
         display: none;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+        width: 80%;
+
     } 
     .situacao-imc{
         width: 400px;
@@ -57,6 +68,12 @@
     }
 }
 @media(max-width: 480px){
+    #titulo-princip{
+        font-size: 90%;
+    }
+    hr{
+        margin-bottom: 10px;
+    }
     img{
         height: 200px;
     }
@@ -65,6 +82,11 @@
     }
     form{
         width: 300px;
+    }
+    .instructions{
+        line-height: 1.6em;
+        margin-bottom: 15px;
+
     }
     .situacao-imc{
         width: 350px;

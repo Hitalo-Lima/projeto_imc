@@ -6,3 +6,7 @@ botao.addEventListener('click', ()=>{
     imagens.classList.toggle('active');
     texto.classList.toggle('active');
 })
+btn_calcular.addEventListener('click', ()=>{
+    texto.classList.add('active');
+    imagens.classList.add('active');
+})
